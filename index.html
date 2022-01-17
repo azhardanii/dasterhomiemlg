@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Slick -->
+    <link rel="stylesheet" href="asset/css/slick.css">
+    <link rel="stylesheet" href="asset/css/slick-theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Daster Homie Murah</title>
+</head>
+<body>
+    <!-- To Top -->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="bx bx-chevron-up scrolltop-icon"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+            <a href="#" class="nav-logo">DasterHomie®</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link active-link">About</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link active-link">Service</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link active-link">Product</a></li>
+                    <li class="nav-item"><a href="#size" class="nav-link active-link">Size Chart</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link active-link">Contact</a></li>
+
+                    <li><i class="bx bx-toggle-left change-theme" id="theme-button"></i></li>
+                </ul>
+            </div>
+            
+            <div class="nav-shop">
+                <a class="nav-icon" onclick="myCart()">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span></span>
+                </a>
+                <div class="nav-shop-content" id="cart-list">
+                    <div class="title-shop">
+                        <span>Keranjang Belanja</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="img-cart">
+                            <div class="img-c">
+                                <img src="asset/img/product1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <span>Daster Anak</span>
+                            <span>1 Pcs</span>
+                        </div>
+                        <div class="total-price">Rp. 25.000</div>
+                        <a href="#" class="delete-item">
+                            <i class="bx bx-x"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <div class="img-cart">
+                            <div class="img-c">
+                                <img src="asset/img/product2.jpg" alt="">
+                            </div>
+                        </div>                        
+                        <div class="description">
+                            <span>Daster Kerut</span>
+                            <span>1 Pcs</span>
+                        </div>
+                        <div class="total-price">Rp. 55.000</div>
+                        <a href="#" class="delete-item">
+                            <i class="bx bx-x"></i>
+                        </a>
+                    </div>    
+                    
+                    <div class="total-all">
+                        <span>Total</span>
+                        <span>Rp. 80.000</span>
+                    </div>
+    
+                    <div class="btn-viewcard">
+                        <a href="#" class="button-top">View Card</a>
+                    </div>
+    
+                    <div class="btn-checkout">
+                        <a href="#" class="button-top2">Check Out</a>
+                    </div>
+                </div>                            
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="slideshow-container">
+                <div class="my-slides fade">
+                    <div class="home-container bd-container bd-grid">
+                        <div class="home-data">
+                            <h1 class="home-title">Daster Homie Handmade Malang</h1>
+                            <h2 class="home-subtitle">Daster lokal termurah, berkualitas, dan bebas custom ukuran.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="asset/img/banner.png" class="home-img" alt="Daster Homie">
+                    </div>
+                </div>
+                <div class="my-slides fade">
+                    <div class="home-container bd-container bd-grid">
+                        <div class="home-data">
+                            <h1 class="home-title">Daster Homie Anak</h1>
+                            <h2 class="home-subtitle">Tersedia untuk ukuran anak anak, dan masih banyak ukuran lainnya yang bahkan bisa custom.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="asset/img/banner2.png" class="home-img" alt="Daster Homie">
+                    </div>
+                </div>
+                <div class="my-slides fade">
+                    <div class="home-container bd-container bd-grid">
+                        <div class="home-data">
+                            <h1 class="home-title">Daster Homie Kerut</h1>
+                            <h2 class="home-subtitle">Tersedia model kerut, dan masih banyak lagi, yukk kepoin model-model yang lainnya.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="asset/img/banner3.png" class="home-img" alt="Daster Homie">
+                    </div>
+                </div>                               
+            </div>    
+            <br>                     
+        </section>
+        <!-- Next & Previous Button -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The Dots Slider -->
+        <div style="text-align:center;">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- About -->
+        <section class="about section bd-container" id="about">            
+            <div class="about-container bd-grid">
+                <div class="about-data">
+                    <span class="section-subtitle about-initial">About us</span>
+                    <h2 class="section-title about-initial">Lokal Daster Terbaik, di Malang</h2>
+                    <p class="about-description">DasterHomie® menyediakan berbagai model daster rumahan yang bisa dipesan menyesuaikan ukuran sesuai dengan ukuran tubuh Anda, sehingga nyaman dan terlihat trendi saat dipakai.</p>
+                    <p class="about-description">Dipercaya sejak 2021 sebagai supplyer daster rumahan dengan kualitas terbaik yang di inisiasi oleh mahasiswa Teknik Industri ITN Malang, Jawa Timur.</p>
+                    <a href="#" class="button" style="margin-top: 1.5rem;">Read More...</a>
+                </div>
+                <img src="asset/img/about.jpg" class="about-img" alt="Daster Homie Malang">
+            </div>
+        </section>
+
+        <!-- Service -->
+        <section class="service section bd-container" id="service">
+            <span class="section-subtitle">Offering</span>
+            <h2 class="section-title">Our Amazing Services</h2>
+            <div class="service-container bd-grid">
+                <div class="service-content">
+                    <img src="asset/img/off.jpg" class="service-img">
+                    <h3 class="service-title">Berbahan Kain Katun</h3>
+                    <p class="service-description">Kain katun pilihan berkualitas tinggi siap dipersembahkan untuk Anda yang berbelanja di DasterHomie® Malang.</p>
+                </div>  
+                <div class="service-content">
+                    <img src="asset/img/off2.jpg" class="service-img">
+                    <h3 class="service-title">Pelayanan 24 Jam</h3>
+                    <p class="service-description">Call center kami siap melayani Anda 24 jam untuk memberikan pengalaman berbelanja terbaik.</p>
+                </div>                                              
+                <div class="service-content">
+                    <img src="asset/img/off3.jpg" class="service-img">
+                    <h3 class="service-title">Harga Termurah</h3>
+                    <p class="service-description">Dengan harganya yang murah bukan berarti kualitasnya murahan, kami ingin menjangkau seluruh lapisan masyarakat agar bisa berbelanja di DasterHomie® Malang.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product -->
+        <section class="product section bd-container" id="product">
+            <span class="section-subtitle">Special</span>
+            <h2 class="section-title">Product of The Week</h2>
+            <div class="product-container bd-grid logo-slider slick-two">
+                <!-- innerHTML JavaScript -->
+            </div>
+        </section>
+
+        <!-- Size Chart -->
+        <section class="size section bd-container" id="size">
+            <div class="size-container bd-grid">
+                <div class="size-data">
+                    <span class="section-subtitle size-initial">Size Chart</span>
+                    <h2 class="section-title size-initial">Find Your Size</h2>
+                    <p class="size-description">Silahkan luangkan waktu sejenak untuk mengamati size chart yang tersedia, apabila ukuran yang Anda ingikan belum tersedia silahkan chat Admin untuk custom ukurannya.</p>
+                </div>
+                <img src="asset/img/size_chart.png" class="size-img" alt="Size Chart Daster Homie">
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact-container bd-grid">
+                <div class="contact-data">
+                    <span class="section-subtitle contact-initial">Let's Talk</span>
+                    <h2 class="section-title contact-initial">Contact Us</h2>
+                    <p class="contact-description">Yukk saling terhubung dengan Customer Service DasterHomie® yang pastinya ramah dan solutif.</p>
+                </div>
+                <div class="contact-button">
+                    <a href="#" class="button">Click to Connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer section bd-container">
+        <div class="footer-container bd-grid">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">DasterHomie®</a>
+                <span class="footer-description">Handmade from Malang</span>
+                <div>
+                    <a href="#" class="footer-social"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer-social"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer-social"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>            
+            <div class="footer-content">
+                <h3 class="footer-title">Service</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Shipping and Returns</a></li>
+                    <li><a href="#" class="footer-link">Mesurement Guide</a></li>
+                    <li><a href="#" class="footer-link">Size Convertion Chart</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Event</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Customer Handling</a></li>
+                    <li><a href="#" class="footer-link">Terms of Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Address</h3>
+                <ul>
+                    <li>Perum. Joyogrand Blok. H2</li>                 
+                    <li>Malang 61065 - Indonesia</li>                 
+                    <li>Phone: +62822 3186 1644</li>                 
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&#169;2022 <a href="https://instagram.com/azhardanii">Diurnal Project.</a> All right reserved</p>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- JS -->
+    <script src="asset/js/main.js"></script>
+    <!-- Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="asset/js/slick-min.js"></script>
+    <script>
+        $('.slick-two').slick({            
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            speed: 2500,
+            autoplaySpeed: 2500,            
+            responsive: [
+                {
+                    breakpoint: 5000,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>
