@@ -175,7 +175,7 @@ let showCart = tbProduct.map(function(column){
         <img src="asset/img/${column.img}" alt="Homie ${column.nama}">
         <h3 class="product-name">${column.nama}</h3>
         <span class="product-price">Rp. ${column.harga},-</span><br>
-        <a href="https://wa.me/send/?phone=6282231861644&text=Haloo%20admin%20Daster%20Homie%2C%0A%0AAku%20mau%20beli%20produk%20ini%20tolong%20segera%20diproses%20yaa..%0A%0ARincian%20produk%20%3A%0A-%3E%20Nama%20%3A%20${column.nama}%0A-%3E%20Harga%20%3A%20${column.harga}" class="button product-button-detail" target="_blank">Langsung Beli</a>
+        <a href="https://wa.me/send?phone=6282231861644&text=Haloo%20admin%20Daster%20Homie%2C%0A%0AAku%20mau%20beli%20produk%20ini%20tolong%20segera%20diproses%20yaa..%0A%0ARincian%20produk%20%3A%0A-%3E%20Nama%20%3A%20${column.nama}%0A-%3E%20Harga%20%3A%20${column.harga}" class="button product-button-detail" target="_blank">Langsung Beli</a>
         <a class="button product-button addcart" data-idprod=${column.idprod}><i class="bx bx-cart-alt" ></i></a>
     </div>`
 })
